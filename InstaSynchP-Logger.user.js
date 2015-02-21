@@ -14,7 +14,7 @@
 // @run-at      document-start
 
 // @require     https://greasyfork.org/scripts/8159-log4javascript/code/log4javascript.js?version=37575
-// @require     https://greasyfork.org/scripts/5647-instasynchp-library/code/InstaSynchP%20Library.js
+// @require     https://greasyfork.org/scripts/5647-instasynchp-library/code/InstaSynchP%20Library.js?version=37716
 // ==/UserScript==
 
 function Logger(version) {
