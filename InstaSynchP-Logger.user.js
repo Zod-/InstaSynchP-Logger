@@ -3,7 +3,7 @@
 // @namespace   InstaSynchP
 // @description Log information with different levels
 
-// @version     1.0.2
+// @version     1.0.3
 // @author      Zod-
 // @source      https://github.com/Zod-/InstaSynchP-Logger
 // @license     MIT
@@ -28,7 +28,7 @@ function Logger(version) {
 Logger.prototype.executeOnceCore = function () {
   "use strict";
   var th = this, oldError;
-  //create logger
+  log4javascript.setDocumentReady();
   th.log = log4javascript.getDefaultLogger();
   th.log.removeAllAppenders();
   th.inPageAppender = new log4javascript.InPageAppender(undefined, false, true, true, "100%", "300px");
@@ -65,4 +65,4 @@ Logger.prototype.executeOnceCore = function () {
 };
 
 window.plugins = window.plugins || {};
-window.plugins.logger = new Logger('1.0.2');
+window.plugins.logger = new Logger('1.0.3');
